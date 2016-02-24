@@ -81,7 +81,7 @@
             // 
             this.outputLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.Color.White;
-            this.outputLabel.Location = new System.Drawing.Point(16, 210);
+            this.outputLabel.Location = new System.Drawing.Point(19, 210);
             this.outputLabel.Name = "outputLabel";
             this.outputLabel.Size = new System.Drawing.Size(253, 43);
             this.outputLabel.TabIndex = 4;

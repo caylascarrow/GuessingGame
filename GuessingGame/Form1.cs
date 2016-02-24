@@ -37,8 +37,8 @@ namespace GuessingGame
             // get the users guess and place into a variable
             int guess = Convert.ToInt16(inputBox.Text);
 
-            //use list to store guesses
-                madeGuess[integerCount] = guess;
+            //add guess to array
+            madeGuess.Add(guess);
 
             // check guess against the random value and output appropriate message
             if (guess < rand)
@@ -54,6 +54,13 @@ namespace GuessingGame
                 outputLabel.Text = "You Got it!";
                 this.Refresh();
                 Thread.Sleep(1500);
+
+                //clear componenets on Form1 (if not, they are visible on Results Screen)
+                titleLabel.Visible = false;
+                promptLabel.Visible = false;
+                inputBox.Visible = false;
+                guessButton.Visible = false;
+                outputLabel.Visible = false;
 
                 //change to new screen
                 Results rs = new Results();
